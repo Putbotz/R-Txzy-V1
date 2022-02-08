@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 R-Txzy 〕
+┌─〔 Putbotz 〕
 ├ Hai, *%name!*
 ├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
@@ -187,7 +187,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": "*© R-Txzy*",
+          "description": "*© Putbotz*",
           "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
           "buttonText": "Click Here",
           "listType": "SINGLE_SELECT",
@@ -385,13 +385,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 "rowId": `${_p}? owner`
               }],
               "title": "─────「 26 」"
-            }, {
-              "rows": [{
-                "title":  `THANKS TO`,
-                "description": "TERIMAKASIH KEPADA DEVELOPER SC",
-                "rowId": `.tqto`
-              }],
-              "title": "THANKS TO"
             }
           ], "contextInfo": {
             "stanzaId": m.key.id,

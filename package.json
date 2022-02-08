@@ -1,7 +1,7 @@
 {
-  "name": "R-Txzy",
-  "version": "2.2.0",
-  "description": "WhatsApp Bot",
+  "name": "©Putbotz",
+  "version": "5.9.9",
+  "description": "Made By ©Putbotz",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
